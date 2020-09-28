@@ -53,6 +53,8 @@ function App() {
           <span className="slider round" />
         </label>
       </header>
+      {/* you need this span to prevent tailwind to purge schema-dark */}
+      <span className="scheme-dark"></span>
     </div>
   );
 }
