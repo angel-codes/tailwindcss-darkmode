@@ -11,9 +11,13 @@ function App() {
           className="animate-spin-slow pointer-events-none"
           alt="logo"
         />
-        <p>
+        <p className="mb-2">
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <label className="switch">
+          <input type="checkbox" />
+          <span className="slider round" />
+        </label>
       </header>
     </div>
   );
