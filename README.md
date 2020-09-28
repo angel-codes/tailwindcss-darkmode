@@ -25,6 +25,14 @@ Then, you need to generate the build of tailwindcss with the following command:
   npm build-css:prod
 ```
 
+Now, you can run the ReactJS App:
+
+```sh
+  yarn start
+  # or
+  npm start
+```
+
 ## This project use
 
 All the important library's that the project use.
