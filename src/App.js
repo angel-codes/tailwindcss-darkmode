@@ -4,7 +4,7 @@ import logo from './logo.svg';
 function App() {
   // local state
   const [isDark, setIsDark] = useState(
-    localStorage.getItem('theme') === 'dark' ? true : false
+    localStorage.getItem('theme') === 'scheme-dark' ? true : false
   );
 
   useEffect(() => {
