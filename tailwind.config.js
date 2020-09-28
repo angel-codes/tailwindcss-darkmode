@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {}
+    extend: {
+      animation: {
+        'spin-slow': 'spin 20s linear infinite'
+      }
+    }
   },
   variants: {},
   plugins: []
