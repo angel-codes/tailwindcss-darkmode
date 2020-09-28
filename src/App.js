@@ -7,9 +7,29 @@ function App() {
     localStorage.getItem('theme') === 'dark' ? true : false
   );
 
+  useEffect(() => {
+    document
+      .getElementsByTagName('html')[0]
+      .classList.add(localStorage.getItem('theme'));
+  }, []);
+
   // function to toggle dark mode
   const handleDarkMode = e => {
-    // todo : change properties
+    const html = document.getElementsByTagName('html')[0];
+
+    if (html.classList.contains('scheme-dark')) {
+      // enable light mode
+      localStorage.setItem('theme', 'scheme-light');
+      html.classList.remove('scheme-dark');
+      html.classList.add(localStorage.getItem('theme'));
+      setIsDark(false);
+    } else {
+      // enable dark mode
+      localStorage.setItem('theme', 'scheme-dark');
+      html.classList.remove('scheme-light');
+      html.classList.add(localStorage.getItem('theme'));
+      setIsDark(true);
+    }
   };
 
   return (
